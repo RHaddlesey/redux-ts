@@ -1,11 +1,16 @@
-import { ActionTypes } from "../action-types";
-import { Action } from "../actions";
+import { ActionTypes } from '../action-types';
+import { Action } from '../actions';
 
 interface RepositoriesState {
   loading: boolean;
   error: string | null;
   data: string[];
 }
+
+// interface Action {
+//   type: string;
+//   payload?: any;
+// }
 
 const reducer = (
   state: RepositoriesState,
